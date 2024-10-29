@@ -1,0 +1,53 @@
+/* OrderPage.module.css */
+.orderPageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orderPageHeader {
+  text-align: center;
+}
+
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+.inputField {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.textareaField {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 10px;
+  background-color: black; /* Button color changed to black */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for the payment icon */
+.paymentIcon {
+  width: 40px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 8px; /* Space between text and image */
+  vertical-align: middle; /* Align image vertically with text */
+}

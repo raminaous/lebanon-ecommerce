@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* Title style */
+.product-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Grid layout for products */
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Individual product card */
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: left; /* Align text to the left */
+  padding: 15px; /* Add padding for better spacing */
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lifting effect on hover */
+}
+
+/* Image styling */
+.product-image {
+  width: 100%; /* Image fills the card */
+  height: 280px; /* Keep the height as needed */
+  object-fit: cover; /* Cover image without stretching */
+  /* Optional: rounded corners only at the top */
+}
+
+/* Product name styling */
+.product-name {
+  font-size: 18px;
+  margin: 10px 0 5px; /* Margin adjusted for better spacing */
+  font-weight: bold;
+}
+
+/* Description styling */
+.product-description {
+  font-size: 14px;
+  color: #666; /* Lighter text for description */
+  margin: 5px 0; /* Margin adjusted for better spacing */
+}
+
+/* Price styling */
+.product-price {
+  font-size: 16px;
+  color: #222; /* Link color for price */
+  margin: 5px 0; /* Margin adjusted for better spacing */
+  text-align: right; /* Align price to the right */
+}
+
+/* Size selector styling */
+.size-select {
+  margin: 10px 0; /* Margin between select and other elements */
+  padding: 12px; /* Increased padding for a larger size */
+  border: 2px solid #ddd; /* Slightly thicker border */
+  border-radius: 6px; /* Adjusted border radius for a softer look */
+  width: 100%; /* Full width for the select box */
+  font-size: 16px; /* Increased font size for better readability */
+  background-color: #f9f9f9; /* Light background color */
+  appearance: none; /* Remove default styling for a custom look */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4" /></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 12px; /* Size of the custom arrow */
+  transition: border-color 0.2s ease; /* Smooth transition for border color */
+}
+
+/* Hover effect for size selector */
+.size-select:hover {
+  border-color: #222; /* Change border color on hover */
+}
+
+/* Focus effect for size selector */
+.size-select:focus {
+  outline: none; /* Remove outline */
+  border-color: #222; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 112, 243, 0.5); /* Optional: add shadow on focus */
+}
+
+/* Button styling */
+.add-button {
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%; /* Full width for button */
+  margin-top: 10px; /* Add margin above the button */
+}
+
+/* Button hover effect */
+.add-button:hover {
+  background-color: #d32d1d; /* Darker color on hover */
+}
+
+/* Optional: Add styles for the options */
+.size-select option {
+  padding: 10px; /* Padding for options (not always applicable) */
+  font-size: 16px; /* Font size for options */
+}

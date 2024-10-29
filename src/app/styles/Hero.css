@@ -1,0 +1,164 @@
+/* Global Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Background Container */
+.full-background-container {
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/clothes-background.jpg.avif");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.full-background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust for desired overlay darkness */
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 32%; /* Default position for larger screens */
+  transform: translate(-50%, -50%);
+  text-align: left; /* Default left-aligned text */
+  color: white;
+  padding: 12rem;
+}
+
+.text-overlay h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.text-overlay p {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* Button */
+.button {
+  margin-top: 35px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 200px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #222;
+  height: 48px;
+}
+
+.button:hover {
+  background-color: rgb(213, 97, 97);
+}
+
+/* Scroll-down Animation */
+.scrolldown-wrapper {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+
+.scrolldown {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  height: 46px;
+  margin: 0 auto 8px;
+  text-align: center;
+  width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+  animation-duration: 1.5s;
+  animation-name: scrolldown;
+  animation-iteration-count: infinite;
+  fill: #ffffff;
+}
+
+.scrolldown-p2 {
+  animation-delay: 0.75s;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
+}
+
+/* Styles for Phones Only */
+@media (max-width: 576px) {
+  /* Center the text overlay */
+  .text-overlay {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Reduce padding for phone-sized screens */
+  }
+
+  /* Adjust the heading size */
+  .text-overlay h1 {
+    font-size: 2rem;
+  }
+
+  /* Adjust the paragraph size */
+  .text-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Adjust button size for phones */
+  .button {
+    font-size: 12px;
+    min-width: 150px;
+    padding: 12px 10px;
+  }
+
+  /* Center the scroll-down animation */
+  .scrolldown-wrapper {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

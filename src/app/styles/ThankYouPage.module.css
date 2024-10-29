@@ -1,0 +1,52 @@
+.thankYouPageContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.thankYouHeader {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.downloadButton {
+  padding: 10px;
+  background-color: black; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.homeButton {
+  padding: 10px;
+  background-color: gray; /* Different color for Home button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thankYouPageContainer {
+  text-align: center;
+}
+
+.thankYouHeader {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.downloadButton,
+.homeButton {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.deliveryNotice {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
